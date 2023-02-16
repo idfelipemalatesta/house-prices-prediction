@@ -2,3 +2,5 @@
 *.csv
 Estudo
 catboost_info
+.ipynb_checkpoints
+house_price_adv
