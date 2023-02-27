@@ -1,24 +1,41 @@
 # House Prices - Advanced Regression Techniques
 
-Este projeto é uma competição da comunidade do kaggle [House Prices - Advanced Regression Techniques](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/overview). O objetivo é prever o preço final de cada casa.
+## About the repository
+This project is a kaggle community competition [House Prices - Advanced Regression Techniques](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/overview). The objective is to predict the final price of each house.
 
-**Descrição da competição**
+Submissions are evaluated on Root-Mean-Squared-Error (RMSE) between the logarithm of the predicted value and the logarithm of the observed sales price.
 
-![](https://storage.googleapis.com/kaggle-competitions/kaggle/5407/media/housesbanner.png)
+### Project content:
 
-Peça a um comprador de imóveis para descrever a casa dos seus sonhos, e eles provavelmente não começarão com a altura do teto do porão ou a proximidade de uma ferrovia leste-oeste. Mas o conjunto de dados desta competição de playground prova que muito mais influencia as negociações de preços do que o número de quartos ou uma cerca branca.
+- Exploratory Data Analysis
+  - Checking for constant variables
+  - Missing Values
+    - Concat both datasets
+    - Impute values
+  - Target variable
+    - Log Transformation
+  - Categorical variables
+    - Univariate Analysis
+  - Numerical variables
+    - Histogram
+    - Scatterplot
 
-Com 79 variáveis explicativas que descrevem (quase) todos os aspectos das casas residenciais em Ames, Iowa.
+- Data preprocessing
+  - Log Transformation
+    - Applying a logarithmic transformation on high skewness variables
+	- Feature encoding
+		- Ordinal Variables(LabelEncoder)
+    - Nominal Variables(OneHotEncoder)
+	- Correlation
+	- Optimize Memory
 
-**Practice Skills**
+- Modelling
+	- Split Imput and Target Variable
+  - Scaling Data
+	- Cross Validation with XGBClassifier
 
-* Creative feature engineering
-* Técnicas de regressão avançadas, como random forest and gradient boosting
+- Hyperparameter tuning
 
-**Durante o projeto foram criadas 3 versões:**
+- Predict and Submission
 
-* Baseline > Score: 0.14921
-* Transformação Logarítmica na variável Target > Score: 0.13095
-* Transformação Logarítmica na variável Target e nas variáveis com Skewness maior que 0.5 > Score: 0.12765
-
-Lembrando que neste caso quanto menor o score melhor o desempenho do modelo.
+**Private Score:  Public Score: **
